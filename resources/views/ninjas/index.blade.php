@@ -11,7 +11,5 @@
     <ul>
         <li>Ninjas Here</li>
     </ul>
-
-    <a href="" class="btn">Find Ninjas</a>
 </body>
 </html>
