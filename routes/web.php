@@ -7,5 +7,5 @@ Route::get('/', function () {
 });
 
 Route::get('/ninjas', function () {
-    return view('ninjas.index');
+    return view('ninjas.index', ["greeting" =>"Hello!"]);
 });

@@ -8,6 +8,7 @@
 </head>
 <body>
     <h2>Currently available Ninjas</h2>
+    <p>{{ greeting }}</p>
     <ul>
         <li>Ninjas Here</li>
     </ul>
