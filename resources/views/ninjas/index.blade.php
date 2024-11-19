@@ -8,14 +8,18 @@
 </head>
 <body>
     <h2>Currently available Ninjas</h2>
+
+    @if($greeting == "Hello!")
+      <p>Download</p>
+    @endif
+
     <p>{{ $greeting }}</p>
     <ul>
+        @foreach ($ninjas as $ninja)
         <li>
-            <a href="/ninjas/{{ $ninjas[0]["id"]}}">{{ $ninjas[0]["name"]}}</a> 
-        </li>
-        <li>
-            <a href="/ninjas/{{ $ninjas[1]["id"]}}">{{ $ninjas[1]["name"]}}</a> 
-        </li>
+            <a href="/ninjas/{{ $ninja["id"]}}">{{ $ninja["name"]}}</a> 
+        </li>   
+        @endforeach
     </ul>
 </body>
 </html>
