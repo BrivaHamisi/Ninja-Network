@@ -11,7 +11,7 @@
         <nav>
             <h1>Ninja Network</h1>
             <a href="/ninjas">All Ninjas</a>
-            <a href="/ninjas/Create">Create New Ninja</a>
+            <a href="/ninjas/create">Create New Ninja</a>
         </nav>
     </header>
     <main class="container">
