@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ninja Network | Home</title>
-</head>
-<body>
+<x-layout>
     <h2>Currently available Ninjas</h2>
 
-    @if($greeting == "Hello!")
+    {{-- @if($greeting == "Hello!")
       <p>Download</p>
-    @endif
+    @endif --}}
 
-    <p>{{ $greeting }}</p>
+    {{-- <p>{{ $greeting }}</p> --}}
     <ul>
         @foreach ($ninjas as $ninja)
         <li>
@@ -22,5 +14,4 @@
         </li>   
         @endforeach
     </ul>
-</body>
-</html>
+</x-layout>
