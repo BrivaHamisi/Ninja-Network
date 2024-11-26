@@ -10,7 +10,8 @@ class Ninja extends Model
     protected $fillable = [
         'name',
         'skills',
-        'bio'
+        'bio',
+        'dojo_id'
     ];
 
     /** @use HasFactory<\Database\Factories\NinjaFactory> */
