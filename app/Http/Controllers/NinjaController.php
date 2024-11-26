@@ -50,6 +50,12 @@ class NinjaController extends Controller
       public function destroy($id) {
         // --> /ninjas/{id} (DELETE)
         // handle delete request to delete a ninja record from table
+        $ninja = Ninja::findOrFail($id);
+        if($ninja){
+            $ninja->delete();
+            return redirect()->route('ninjas.index')->with('success', 'Ninja deleted successfully');
+        }
+        return redirect()->route('ninjas.index')->with('error', 'Ninja not found');
       }
   
       // edit() and update() for edit view and update requests

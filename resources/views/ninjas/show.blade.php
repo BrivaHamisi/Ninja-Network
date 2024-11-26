@@ -16,4 +16,14 @@
     <p>{{ $ninja->dojo->description }}</p>
   </div>
 
+  <form action="{{ route('ninjas.destroy', $ninja->id )}}" method="POST">
+    @csrf
+    @method('DELETE')
+    <button type="submit" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Delete Ninja</button>
+    {{-- <a href="{{ route('ninjas.edit', $ninja->id ) }}" class="ml-4 text-blue-500 hover:text-blue-700">Edit Ninja</a>
+    <a href="{{ route('dojos.show', $ninja->dojo->id ) }}" class="ml-4 text-blue-500 hover:text-blue-700">View Dojo</a> --}}
+
+    {{-- @if (Auth::user()->id === $ninja->user_id) --}}
+  </form>
+
   </x-layout>
