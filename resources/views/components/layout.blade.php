@@ -9,6 +9,18 @@
     @vite('resources/css/app.css')
 </head>
 <body>
+    @if(session('success'))
+        <div id="flash" class="p-4 text-center bg-green-50 text-green-500 font-bold">
+            {{session('success')}}
+        </div>
+    @endif 
+
+    @if(session('error'))
+        <div id="flash" class="p-4 text-center bg-red-50 text-red-500 font-bold">
+            {{session('error')}}
+        </div>
+    @endif
+
     <header>
         <nav>
             <h1>Ninja Network</h1>
